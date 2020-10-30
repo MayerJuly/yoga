@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Agency FB', cursive;
-    src: url("../fonts/Agency-FB.ttf");
+    src: url("/fonts/Agency-FB.ttf");
 }
 
 
@@ -285,6 +285,10 @@ nav.active {
 
 /*ABOUT*/
 
+.about{
+    background-color: #fff;
+}
+
 .about__wrapper{
     display: flex;
     padding:0 66px;
@@ -365,6 +369,10 @@ nav.active {
 }
 
 /* FEATURES */
+
+.features{
+    background-color: #fff;
+}
 
 .features__wrapper {
     padding: 0 66px 167px;
