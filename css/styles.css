@@ -216,7 +216,7 @@ nav.active {
 .intro {
     height: auto;
     width: 100%;
-    background: url('../img/intro/background.webp') 0 0 no-repeat;
+    background: url('../img/intro/background.jpg') 0 0 no-repeat;
 
 }
 
@@ -507,7 +507,7 @@ nav.active {
 .footer{
     min-height: 1284px;
     width: 100%;
-    background: url("../img/footer/background.jpg") center no-repeat;
+    background: url("../img/footer/background.webp") center no-repeat;
     background-size:cover;
     position:relative;
 }
