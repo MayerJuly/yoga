@@ -28,6 +28,52 @@ body {
 
 }
 
+/* PreLoader */
+
+
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #515151;
+    z-index: 101;
+    opacity:1;
+    visibility: visible;
+    transition: 1s all;
+}
+
+.loader{
+    width: 75px;
+    height: 75px;
+    border:10px solid #fff;
+    border-radius: 50%;
+    border-top-color: lightskyblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: 1s spin infinite linear;
+}
+
+.preloader.done{
+    opacity:0;
+    visibility: hidden;
+}
+
+@keyframes spin{
+    from{
+    transform: translate(-50%,-50%) rotate(0deg)
+    }
+
+    to{
+        transform: translate(-50%,-50%) rotate(360deg)
+    }
+
+
+}
+
 /* link */
 
 a {
