@@ -56,5 +56,5 @@ document.body.onload= function() {
             }
         }
 
-    }, 1000)
+    }, 2000)
 }
