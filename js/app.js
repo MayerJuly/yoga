@@ -70,7 +70,7 @@ $(function() {
     const close = $('.js-close-popup')
     const modalOverlay = $('.overlay')
     const popup = $('.js-popup')
-
+    const form = document.getElementById('form')
 
     function closeModal(close,object) {
         close.click(function (){
@@ -95,23 +95,15 @@ $(function() {
 
     closeModalOverlay(popup,modalOverlay)
 
-
-    //    Modal PLAY
-
-    const modalPlayOverlay = $('.overlay-play')
-    const popupPlay = $('.js-popup-play')
-
-
-
-    $('.js-button-popup-play').click(function (){
-        modalPlayOverlay.addClass('active')
-    })
-
-    closeModal(close,modalPlayOverlay)
-
-    closeModalOverlay(popupPlay,modalPlayOverlay)
-
-
+    document.getElementById('sendingButton')
+        .addEventListener('click',()=>{
+            form.classList.add('_sending')
+            setTimeout(()=>{
+                form.classList.remove('_sending')
+                modalOverlay.removeClass('active')
+                alert('Успешно отправлено')
+            },2500)
+        })
 
 //    BURGER
 
@@ -140,11 +132,6 @@ arrow.on('click', () => {
     },700)
 })
 
-
-
-
-
-//    Header fixed
 checkScroll(scrollPos, userH)
 
 $(window).on('scroll resize', () => {
@@ -159,3 +146,6 @@ function checkScroll(scrollPos, userH) {
         arrow.removeClass('active')
     }
 }
+
+
+
