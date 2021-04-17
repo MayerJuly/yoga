@@ -994,6 +994,10 @@ nav.active {
         margin-left: auto;
     }
 
+    .about__img-box{
+        margin-left: 0;
+    }
+
     .about__img{
         transition-delay: .5s;
     }
