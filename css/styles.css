@@ -468,6 +468,7 @@ nav.active {
     min-height: 500px;
     width: 100%;
     max-width: 390px;
+    height: auto;
     margin-left: auto;
     object-fit:cover;
     object-position: right;
@@ -1176,6 +1177,10 @@ nav.active {
     .nav-logo{
         padding-left: 0;
     }
+    /* LESSONS */
+    .lessons__title {
+        font-size:50px;
+    }
 }
 
 
@@ -1184,10 +1189,7 @@ nav.active {
 
     .about__content-title,
     .lessons__title {
-        font-size:58px;
-    }
-    .about__img img{
-        object-fit:none;
+        font-size:45px;
     }
 
 
